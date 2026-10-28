@@ -1,5 +1,6 @@
 import "../styles/main.css";
+import { getHomepageViewModel } from "../application/get-homepage-view-model.js";
+import { getProfile } from "../infrastructure/profile/static-profile-repository.js";
+import { mountApp } from "../presentation/app.js";
 
-document.querySelector("#app").innerHTML = `
-  <h1>my-website</h1>
-`;
+mountApp(getHomepageViewModel(getProfile()));

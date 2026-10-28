@@ -11,3 +11,6 @@ Thumbs.db
 .env.*
 !.env.example
 
+# Local agent execution artifacts
+.superpowers/
+
