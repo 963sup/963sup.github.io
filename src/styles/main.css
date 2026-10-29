@@ -67,6 +67,25 @@ p { color: #a9b8ca; line-height: 1.7; }
 .principle-card { position: relative; background: transparent; }
 .principle-card span { display: block; margin-bottom: 52px; color: #5d7cfe; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
 
+.architecture-section { border-top: 0; background: linear-gradient(135deg, #101f37, #0c1727); }
+.architecture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.architecture-card { padding: 28px; border-top: 2px solid #46e0c1; background: #0c1727; }
+.architecture-card > span, .architecture-details li span { color: #46e0c1; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.75rem; }
+.architecture-card > span { display: block; margin-bottom: 40px; }
+.architecture-card p { margin-bottom: 0; font-size: 0.94rem; }
+.architecture-example { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: 48px; margin-top: 48px; padding: 32px; border: 1px solid #20314a; background: #08111f; }
+.architecture-example h3 { font-size: 1.1rem; line-height: 1.2; }
+.architecture-example p { margin-bottom: 0; font-size: 0.9rem; }
+.context-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.context-grid article { padding: 16px; border: 1px solid #20314a; }
+.context-grid h3 { margin-bottom: 8px; font-size: 0.95rem; }
+.architecture-details { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px; }
+.architecture-details ol, .architecture-details ul { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.architecture-details li { display: flex; gap: 12px; color: #d5e1ef; line-height: 1.5; }
+.architecture-details li strong { display: block; color: #ffffff; font-size: 0.9rem; }
+.architecture-details li p { margin: 4px 0 0; font-size: 0.85rem; }
+.architecture-details ul li::before { color: #46e0c1; content: "↗"; }
+
 .contact-panel { margin: 0 0 96px; padding: 56px; background: #46e0c1; color: #0b1828; }
 .contact-panel .eyebrow, .contact-panel p { color: #0b1828; }
 .contact-panel p:not(.eyebrow) { max-width: 600px; margin-bottom: 28px; }
@@ -80,6 +99,9 @@ footer { display: flex; justify-content: space-between; gap: 16px; padding: 28px
   nav { gap: 14px; font-size: 0.75rem; }
   .hero { grid-template-columns: 1fr; gap: 40px; min-height: auto; padding: 80px 0; }
   .card-grid, .principle-grid { grid-template-columns: 1fr; }
+  .architecture-grid, .architecture-details { grid-template-columns: 1fr; }
+  .architecture-example, .context-grid { grid-template-columns: 1fr; }
+  .architecture-details { gap: 32px; }
   .project-grid { grid-template-columns: 1fr; }
   .section { padding: 72px 0; }
   .section--contrast { padding-inline: 16px; }
